@@ -42,19 +42,20 @@ description: Use for gasless non-custodial EVM market, limit, TWAP, stop-loss, t
 **Replace with:**
 ```yaml
 description: >
-  Execute advanced DeFi swap orders on EVM chains — gasless, non-custodial,
-  oracle-protected, and audited. Place limit orders, TWAP (time-weighted average
-  price) / DCA (dollar-cost averaging), stop-loss, take-profit, and market swap
-  orders on decentralized exchanges. Supports on-chain crypto trading, automated
-  order execution, and AI agent-driven DeFi workflows. Powered by Orbs Network
-  dLIMIT and dTWAP protocols across Ethereum, Polygon, BNB Chain, Arbitrum, Base,
-  Linea, Avalanche, and Sonic.
+  Buy, sell, and swap tokens on decentralized exchanges with advanced order types
+  — gasless, non-custodial, oracle-protected, and audited. Place limit orders,
+  TWAP (time-weighted average price) / DCA (dollar-cost averaging), stop-loss,
+  take-profit, and market swap orders on EVM chains. Supports on-chain crypto
+  trading, automated DeFi order execution, token swaps, and AI agent-driven
+  workflows. Powered by Orbs Network dLIMIT and dTWAP protocols across Ethereum,
+  Polygon, BNB Chain, Arbitrum, Base, Linea, Avalanche, and Sonic.
 ```
 
 **Why each phrase is there:**
 
 | Phrase added | Query it unlocks |
 |---|---|
+| "Buy, sell, and swap tokens" | buy crypto, sell tokens, token swap |
 | "DeFi swap orders" | DeFi orders, DeFi swap skill |
 | "gasless, non-custodial" | gasless swap, non-custodial trading |
 | "oracle-protected" | oracle protected swap |
@@ -66,6 +67,7 @@ description: >
 | "decentralized exchanges" | DEX limit order, on-chain trading |
 | "crypto trading" | crypto trading |
 | "automated order execution" | automated DeFi orders |
+| "token swaps" | token swap, swap tokens |
 | "AI agent-driven" | AI trading agent |
 | "Orbs Network" | Orbs trading |
 | "dLIMIT and dTWAP" | branded product terms (zero competition) |
@@ -81,6 +83,7 @@ Insert before the `## Distribution` section:
 ## When to Use This Skill
 
 Use Spot when a user wants to:
+- **Buy or sell crypto** on a decentralized exchange
 - **Swap tokens** on a DEX without giving up custody
 - **Place limit orders** or **stop-loss / take-profit** on-chain
 - **DCA** (dollar-cost average) into a token using TWAP execution
@@ -107,7 +110,7 @@ Fixes the broken brand search ("orbs" → 0 results).
 
 ### Change 4 (optional): Slim the SKILL.md body
 
-The SKILL.md body is well-structured and technically thorough — don't touch the content. But if it's over 10KB, consider moving the `## Commands`, `## Guardrails`, and `## Distribution` sections into `references/` files. Leaner SKILL.md = less noise in the embedding = stronger signal from the description and opening paragraph.
+The SKILL.md body (~5KB) is well-structured and technically thorough — don't touch the core content. But the `## Distribution` and `## Auto Check For Updates` sections add ~40% of the body without contributing to search relevance. Moving them to `references/` would reduce embedding noise and strengthen the signal from the description and opening paragraph.
 
 ---
 
